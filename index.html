@@ -1,10 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio 5 Reformer Pilates</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fdfdfd; color: #111; }
+    header {
+      background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                  url("https://images.unsplash.com/photo-1554284126-6b78e3a90506");
+      background-size: cover; background-position: center;
+      height: 90vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; color: white; padding: 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 15px; }
+    header p { font-size: 1.2rem; max-width: 600px; margin: auto 0 25px; }
+    .btn { display: inline-block; padding: 14px 28px; background: white; color: black; border-radius: 30px; text-decoration: none; font-weight: bold; }
+    section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+    .about { text-align: center; }
+    .about h2 { font-size: 2.2rem; margin-bottom: 20px; }
+    .about p { max-width: 700px; margin: auto; line-height: 1.6; font-size: 1.05rem; }
+    .programs { background: #f7f7f7; }
+    .program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+    .program { background: white; padding: 35px; text-align: center; border-radius: 15px; }
+    .program h3 { margin-bottom: 10px; }
+    footer { background: #111; color: #aaa; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
+    @media (max-width: 600px) { header h1 { font-size: 2.2rem; } }
+  </style>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>This is my website.</p>
+
+  <header>
+    <div>
+      <h1>Studio 5 Reformer Pilates</h1>
+      <p>Strengthen your body, align your mind, and feel your best with Studio 5 Reformer Pilates.</p>
+      <a href="#programs" class="btn">View Classes</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Studio 5 Reformer Pilates offers high-quality reformer classes for all levels. Our focus is on proper technique, individualized instruction, and creating a supportive environment where everyone can thrive.</p>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2 style="text-align:center;">Our Classes</h2>
+    <div class="program-grid">
+      <div class="program">
+        <h3>Beginner Reformer</h3>
+        <p>Perfect for new students to learn foundational techniques safely.</p>
+      </div>
+      <div class="program">
+        <h3>Intermediate Reformer</h3>
+        <p>Build strength, flexibility, and confidence with guided instruction.</p>
+      </div>
+      <div class="program">
+        <h3>Private Sessions</h3>
+        <p>Personalized one-on-one sessions to focus on your specific goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Studio 5 Reformer Pilates · All Rights Reserved
+  </footer>
+
 </body>
 </html>
