@@ -11,16 +11,9 @@
   body { margin:0; font-family:'Poppins', sans-serif; color:#333333; }
   a { text-decoration:none; }
 
-  /* HERO BANNER WITH GRADIENT OVERLAY AND PARALLAX */
-  .hero {
-    position: relative;
-    width:100%;
-    max-height:500px;
-    overflow:hidden;
-    background: linear-gradient(rgba(255,111,97,0.3), rgba(255,155,133,0.3)), url('Studio5.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  /* HERO BANNER */
+  .hero { width:100%; max-height:500px; overflow:hidden; }
+  .hero img { width:100%; height:auto; display:block; object-fit:cover; }
 
   /* REGISTER BUTTON BELOW HERO */
   .register { text-align:center; margin:30px 0; }
@@ -72,7 +65,9 @@
 <body>
 
 <!-- HERO BANNER -->
-<div class="hero"></div>
+<div class="hero">
+  <img src="Studio5.png" alt="Studio 5 Reformer Pilates Banner">
+</div>
 
 <!-- REGISTER BUTTON BELOW HERO -->
 <div class="register">
