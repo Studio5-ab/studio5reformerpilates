@@ -2,57 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio 5 Reformer Pilates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #111;
+      color: #333;
+      line-height: 1.6;
     }
 
-    .programs {
-      padding: 60px 20px;
-      background: #f7f7f7;
+    header {
+      text-align: center;
+      padding: 24px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .banner img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     .program-grid {
-      max-width: 1100px;
-      margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      gap: 20px;
     }
 
     .program {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
     }
 
-    .register-btn {
+    .register {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .register a {
       display: inline-block;
-      margin-top: 40px;
-      padding: 18px 36px;
+      padding: 14px 32px;
       background-color: #ff6f61;
       color: white;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
       border-radius: 30px;
-      font-size: 18px;
+      font-size: 16px;
     }
 
-    .register-btn:hover {
+    .register a:hover {
       background-color: #e65b50;
     }
 
     footer {
-      background: #111;
-      color: #aaa;
       text-align: center;
-      padding: 30px 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
       font-size: 14px;
     }
   </style>
@@ -60,64 +86,14 @@
 
 <body>
 
-<!-- TOP IMAGE BANNER -->
-<img src="Studio5.png" style="width:100%; height:auto; display:block;">
+<header>
+  <h1>Studio 5 Reformer Pilates</h1>
+</header>
 
-<section class="programs" id="programs">
-  <h2 style="text-align:center;">Our Classes</h2>
+<!-- BANNER IMAGE -->
+<div class="banner">
+  <img src="Studio5.png" alt="Studio 5 Reformer Pilates">
+</div>
 
-  <div class="program-grid">
-    <div class="program">
-      <h3>Class Times</h3>
-      <p>
-        Monday 4:30–5:25 pm<br>
-        Monday 6:15–7:10 pm<br>
-        Tuesday 6:30–7:25 pm<br>
-        Tuesday 7:30–8:25 pm<br>
-        Thursday 5:30–6:25 pm<br>
-        Thursday 6:30–7:25 pm<br>
-        Thursday 7:30–8:25 pm<br>
-        Saturday 9:00–9:45 am Express Class<br>
-        Saturday 10:30–11:25 am
-      </p>
-    </div>
-
-    <div class="program">
-      <h3>Sessions</h3>
-      <p>
-        Winter – Jan 19 to Mar 19, 2026<br>
-        Spring – Mar 30 to May 30, 2026<br>
-        Summer & Mini Session dates to come
-      </p>
-    </div>
-
-    <div class="program">
-      <h3>Pricing</h3>
-      <p>
-        $35 annual membership fee (waived before Jan 15)<br>
-        1 class/week – $270 + GST<br>
-        2 classes/week – $495 + GST<br>
-        3 classes/week – $675 + GST<br><br>
-        Prices listed are per session
-      </p>
-    </div>
-  </div>
-
-  <!-- CENTERED REGISTER BUTTON -->
-  <div style="text-align:center;">
-    <a href="https://www.absolutedanceinc.com/studio-5-reformer-pilates-2/"
-       target="_blank"
-       class="register-btn">
-       Register Here
-    </a>
-  </div>
-</section>
-
-<footer>
-  © 2025 Studio 5 Reformer Pilates · All Rights Reserved
-</footer>
-
-</body>
-</html>
-
-
+<!-- ABOUT -->
+<sectio
