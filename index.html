@@ -1,45 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Studio 5 Reformer Pilates</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; color:#333; }
-    header { text-align:center; padding:20px; background:#fff; border-bottom:1px solid #eee; }
-    header h1 { margin:0; font-size:32px; }
-    .banner img { width:100%; display:block; max-height:400px; object-fit:cover; }
-    section { padding:40px 20px; max-width:900px; margin:auto; }
-    h2 { text-align:center; margin-bottom:20px; }
-    .program-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
-    .program { background:#f9f9f9; padding:20px; border-radius:8px; }
-    .register { text-align:center; margin:40px 0; }
-    .register a { display:inline-block; padding:14px 32px; background:#ff6f61; color:white; text-decoration:none; font-weight:bold; border-radius:30px; font-size:16px; }
-    .register a:hover { background:#e65b50; }
-    footer { text-align:center; padding:20px; background:#f2f2f2; font-size:14px; }
-  </style>
+<meta charset="UTF-8">
+<title>Studio 5 Reformer Pilates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* Reset and base */
+  body { margin:0; font-family:'Helvetica Neue', Arial, sans-serif; color:#333; }
+  a { text-decoration:none; }
+
+  /* HERO BANNER */
+  .hero {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Overlay text on banner */
+  .hero-text {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    margin: 12px 0 20px;
+  }
+
+  .hero-text .btn-register {
+    padding: 16px 40px;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+
+  .hero-text .btn-register:hover {
+    background-color: #e65b50;
+  }
+
+  /* Sections */
+  section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h2 { text-align: center; margin-bottom: 20px; font-size:2rem; }
+
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+  }
+
+  .program {
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+
+  .program:hover { transform: translateY(-5px); }
+
+  footer {
+    text-align:center;
+    padding:20px;
+    background:#f2f2f2;
+    font-size:14px;
+    color:#555;
+  }
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Studio 5 Reformer Pilates</h1>
-</header>
-
-<!-- Banner Image -->
-<div class="banner">
+<!-- HERO BANNER -->
+<div class="hero">
   <img src="Studio5.png" alt="Studio 5 Reformer Pilates Banner">
+  <div class="hero-text">
+    <h1>Studio 5 Reformer Pilates</h1>
+    <p>Strengthen Your Body. Align Your Mind.</p>
+    <a href="https://www.absolutedanceinc.com/studio-5-reformer-pilates-2/" target="_blank" class="btn-register">Register Now</a>
+  </div>
 </div>
 
-<!-- About Us -->
+<!-- ABOUT US -->
 <section>
   <h2>About Us</h2>
   <p>
-    Welcome to Studio 5 Reformer Pilates! Our classes are designed to build strength, improve flexibility, and enhance core stability. 
-    We offer a friendly, supportive environment suitable for all levels.
+    Studio 5 Reformer Pilates offers dynamic, strength-building reformer classes designed to improve flexibility, posture, and core stability.
+    Our sessions are welcoming, energizing, and suitable for all levels.
   </p>
 </section>
 
-<!-- Classes Section -->
+<!-- CLASSES -->
 <section>
   <h2>Our Classes</h2>
   <div class="program-grid">
@@ -71,27 +150,5 @@
     <div class="program">
       <h3>Pricing</h3>
       <p>
-        $35 annual membership fee (waived if registered before Jan 15)<br>
-        1 class/week: $270 + GST<br>
-        2 classes/week: $495 + GST<br>
-        3 classes/week: $675 + GST<br>
-        <em>Prices listed per session</em>
-      </p>
-    </div>
+        $35 annual membership fee (waived if registered before J
 
-  </div>
-</section>
-
-<!-- Register Button -->
-<div class="register">
-  <a href="https://www.absolutedanceinc.com/studio-5-reformer-pilates-2/" target="_blank">
-    Register Here
-  </a>
-</div>
-
-<footer>
-  © 2025 Studio 5 Reformer Pilates · All Rights Reserved
-</footer>
-
-</body>
-</html>
