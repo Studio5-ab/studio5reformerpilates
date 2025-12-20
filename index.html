@@ -8,12 +8,19 @@
 
 <style>
   /* Base Styles */
-  body { margin:0; font-family:'Poppins', sans-serif; color:#333333; background-color:#ffffff; }
+  body { margin:0; font-family:'Poppins', sans-serif; color:#333333; }
   a { text-decoration:none; }
 
-  /* HERO BANNER */
-  .hero { width:100%; max-height:500px; overflow:hidden; }
-  .hero img { width:100%; height:auto; display:block; object-fit:cover; }
+  /* HERO BANNER WITH GRADIENT OVERLAY AND PARALLAX */
+  .hero {
+    position: relative;
+    width:100%;
+    max-height:500px;
+    overflow:hidden;
+    background: linear-gradient(rgba(255,111,97,0.3), rgba(255,155,133,0.3)), url('Studio5.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   /* REGISTER BUTTON BELOW HERO */
   .register { text-align:center; margin:30px 0; }
@@ -31,16 +38,18 @@
   .btn-register:hover { transform:scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.3); }
 
   /* Sections */
-  section { padding:60px 20px; max-width:900px; margin:auto; }
+  section { padding:60px 20px; max-width:900px; margin:auto; border-radius:12px; }
   h2 { text-align:center; margin-bottom:25px; font-size:2.2rem; color:#ff6f61; opacity:0; animation: fadeInUp 1.5s forwards; }
 
-  /* About Us Paragraph */
-  section p { font-size:1.1rem; line-height:1.8; opacity:0; animation: fadeIn 2s forwards; }
+  /* About Us Section */
+  .about { background-color:#fff5f3; opacity:0; animation: fadeIn 2s forwards; }
+  .about p { font-size:1.1rem; line-height:1.8; }
 
   /* Program Grid */
+  .classes { background-color:#f2f2f2; }
   .program-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
   .program {
-    background:#f9f9f9; padding:25px; border-radius:15px;
+    background:#ffffff; padding:25px; border-radius:15px;
     box-shadow:0 6px 20px rgba(0,0,0,0.08);
     transform:translateY(20px); opacity:0;
     animation: slideUp 1.2s forwards;
@@ -63,9 +72,7 @@
 <body>
 
 <!-- HERO BANNER -->
-<div class="hero">
-  <img src="Studio5.png" alt="Studio 5 Reformer Pilates Banner">
-</div>
+<div class="hero"></div>
 
 <!-- REGISTER BUTTON BELOW HERO -->
 <div class="register">
@@ -73,7 +80,7 @@
 </div>
 
 <!-- ABOUT US -->
-<section style="background:#fff;">
+<section class="about">
   <h2>About Us</h2>
   <p>
     Studio 5 Reformer Pilates offers dynamic, strength-building reformer classes designed to improve flexibility, posture, and core stability.
@@ -82,7 +89,7 @@
 </section>
 
 <!-- CLASSES -->
-<section style="background:#f9f9f9;">
+<section class="classes">
   <h2>Our Classes</h2>
   <div class="program-grid">
 
