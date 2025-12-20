@@ -1,76 +1,92 @@
-<!-- Rebuild trigger -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio 5 Reformer Pilates</title>
+
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #fdfdfd; color: #111; }
-    header {
-      background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
-                  url("https://images.unsplash.com/photo-1554284126-6b78e3a90506");
-      background-size: cover; background-position: center;
-      height: 90vh; display: flex; align-items: center; justify-content: center;
-      text-align: center; color: white; padding: 20px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
     }
-    header h1 { font-size: 3rem; margin-bottom: 15px; }
-    header p { font-size: 1.2rem; max-width: 600px; margin: auto 0 25px; }
-    .btn { display: inline-block; padding: 14px 28px; background: white; color: black; border-radius: 30px; text-decoration: none; font-weight: bold; }
-    section { padding: 80px 20px; max-width: 1100px; margin: auto; }
-    .about { text-align: center; }
-    .about h2 { font-size: 2.2rem; margin-bottom: 20px; }
-    .about p { max-width: 700px; margin: auto; line-height: 1.6; font-size: 1.05rem; }
-    .programs { background: #f7f7f7; }
-    .program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-    .program { background: white; padding: 35px; text-align: center; border-radius: 15px; }
-    .program h3 { margin-bottom: 10px; }
-    footer { background: #111; color: #aaa; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
-    @media (max-width: 600px) { header h1 { font-size: 2.2rem; } }
+
+    .programs {
+      padding: 60px 20px;
+      background: #f7f7f7;
+    }
+
+    .program-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .program {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .register-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 18px 36px;
+      background-color: #ff6f61;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+
+    .register-btn:hover {
+      background-color: #e65b50;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
-  <img src="Studio5.png" style="width:100%; height:auto;">
 
+<!-- TOP IMAGE BANNER -->
+<img src="Studio5.png" style="width:100%; height:auto; display:block;">
 
-  <header>
-    <div>
-      <h1>Studio 5 Reformer Pilates</h1>
-      <p>Strengthen your body, align your mind, and feel your best with Studio 5 Reformer Pilates.</p>
-      <a href="#programs" class="btn">View Classes</a>
-    </div>
-  </header>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Studio 5 Reformer Pilates offers a new boutique Pilates experience on a term-based schedule, for a handcrafted commitment that works for anyone who is looking to prioritize their health. We’re offering small class sizes for a workout that is sustainable, empowering, and a path for those who want to feel strong.
-
-Simply choose the session dates that work for you, and the class times you want to attend, between one and three times a week, for the commitment that works for you.</p>
-  </section>
-
- <section class="programs" id="programs">
+<section class="programs" id="programs">
   <h2 style="text-align:center;">Our Classes</h2>
+
   <div class="program-grid">
     <div class="program">
       <h3>Class Times</h3>
       <p>
-        Monday 4:30-5:25 pm<br>
-        Monday 6:15-7:10 pm<br>
-        Tuesday 6:30-7:25 pm<br>
-        Tuesday 7:30-8:25 pm<br>
-        Thursday 5:30-6:25 pm<br>
-        Thursday 6:30-7:25 pm<br>
-        Thursday 7:30-8:25 pm<br>
-        Saturday 9:00-9:45 am Express Class<br>
-        Saturday 10:30-11:25 am
+        Monday 4:30–5:25 pm<br>
+        Monday 6:15–7:10 pm<br>
+        Tuesday 6:30–7:25 pm<br>
+        Tuesday 7:30–8:25 pm<br>
+        Thursday 5:30–6:25 pm<br>
+        Thursday 6:30–7:25 pm<br>
+        Thursday 7:30–8:25 pm<br>
+        Saturday 9:00–9:45 am Express Class<br>
+        Saturday 10:30–11:25 am
       </p>
     </div>
 
     <div class="program">
       <h3>Sessions</h3>
       <p>
-        Winter – Monday January 19 through Thursday March 19, 2026<br>
-        Spring – Monday March 30 through Saturday May 30, 2026<br>
+        Winter – Jan 19 to Mar 19, 2026<br>
+        Spring – Mar 30 to May 30, 2026<br>
         Summer & Mini Session dates to come
       </p>
     </div>
@@ -78,42 +94,30 @@ Simply choose the session dates that work for you, and the class times you want 
     <div class="program">
       <h3>Pricing</h3>
       <p>
-        $35 annual membership fee (waived if registered before January 15th)<br>
-        1 class per week $270 + GST<br>
-        2 classes per week $495 + GST<br>
-        3 classes per week $675 + GST<br><br>
+        $35 annual membership fee (waived before Jan 15)<br>
+        1 class/week – $270 + GST<br>
+        2 classes/week – $495 + GST<br>
+        3 classes/week – $675 + GST<br><br>
         Prices listed are per session
       </p>
     </div>
   </div>
 
-  <!-- Centered Register Button -->
-  <div style="text-align:center; margin-top:40px;">
-    <a href="https://www.absolutedanceinc.com/studio-5-reformer-pilates-2/" target="_blank" class="register-btn">
-        Register Here
+  <!-- CENTERED REGISTER BUTTON -->
+  <div style="text-align:center;">
+    <a href="https://www.absolutedanceinc.com/studio-5-reformer-pilates-2/"
+       target="_blank"
+       class="register-btn">
+       Register Here
     </a>
   </div>
 </section>
 
-<!-- Register Button CSS -->
-<style>
-.register-btn {
-    display: inline-block;
-    padding: 18px 36px;
-    background-color: #ff6f61;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-.register-btn:hover {
-    background-color: #e65b50;
-}
-</style>
-
 <footer>
   © 2025 Studio 5 Reformer Pilates · All Rights Reserved
 </footer>
+
+</body>
+</html>
+
 
