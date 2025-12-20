@@ -11,9 +11,16 @@
   body { margin:0; font-family:'Poppins', sans-serif; color:#333333; }
   a { text-decoration:none; }
 
-  /* HERO BANNER */
-  .hero { width:100%; max-height:500px; overflow:hidden; }
-  .hero img { width:100%; height:auto; display:block; object-fit:cover; }
+  /* HERO BANNER WITH GRADIENT OVERLAY AND PARALLAX */
+  .hero {
+    position: relative;
+    width:100%;
+    max-height:500px;
+    overflow:hidden;
+    background: linear-gradient(rgba(255,111,97,0.3), rgba(255,155,133,0.3)), url('Studio5.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   /* REGISTER BUTTON BELOW HERO */
   .register { text-align:center; margin:30px 0; }
@@ -65,9 +72,7 @@
 <body>
 
 <!-- HERO BANNER -->
-<div class="hero">
-  <img src="Studio5.png" alt="Studio 5 Reformer Pilates Banner">
-</div>
+<div class="hero"></div>
 
 <!-- REGISTER BUTTON BELOW HERO -->
 <div class="register">
@@ -78,11 +83,8 @@
 <section class="about">
   <h2>About Us</h2>
   <p>
-    Studio 5 is a new boutique Reformer Pilates experience on a term-based schedule, for a handcrafted commitment that works for anyone who is looking to prioritize their health. We’re offering small class sizes for a workout that is sustainable, empowering, and a path for those who want to feel strong.
-Simply choose the session dates that work for you, and the class times you want to attend, between one and three times a week, for the commitment that works for you. No monthly membership required.
-Our mission is to create a low pressure wellness experience that respects your time and investment. We believe in creating real community without the crowds, and sustainable wellness that prioritizes balance over burnout. 
-
-
+    Studio 5 Reformer Pilates offers dynamic, strength-building reformer classes designed to improve flexibility, posture, and core stability.
+    Our sessions are welcoming, energizing, and suitable for all levels.
   </p>
 </section>
 
